@@ -3,7 +3,6 @@
 
 clear; close all; clc;
 
-%% =================== 1. Load Wine Quality Dataset ===================
 red  = readtable('C:\Users\Owner\Downloads\winequality-red.csv');
 white = readtable('C:\Users\Owner\Downloads\winequality-white.csv');
 wineData = [red; white];
@@ -114,4 +113,5 @@ fprintf('HAR Classifier Accuracy: %.2f%%\n', accuracy_HAR*100);
 disp('HAR Confusion Matrix:'); disp(confMat_HAR);
 
 figure; confusionchart(confMat_HAR); title('HAR Gaussian Classifier');
+
 
